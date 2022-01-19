@@ -1,0 +1,17 @@
+package nick.pack;
+
+
+public class Main {
+    public static void main(String[] args) {
+        long l = 1234567891;
+        int i = (int) l;
+        short s = (short) i;
+        byte b = (byte) s;
+        double d = 0.100000000000000000;
+        float f = (float) d;
+        String str = String.valueOf(b);
+        char c = str.charAt(0);
+        String ss = String.format("%d\n%d\n%d\n%d\n%f\n%f\n%s\n%c", l, i, s, b, d, f, str, c);
+        System.out.printf(ss);
+    }
+}
